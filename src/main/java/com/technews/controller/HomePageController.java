@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
@@ -30,16 +31,14 @@ public class HomePageController {
     @Autowired
     CommentRepository commentRepository;
 
-    @GetMapping("/login")
-    public String login(Model model, HttpServletRequest request) {
-
-        if (request.getSession(false) != null) {
-            return "redirect:/";
-        }
-
-        model.addAttribute("user", new User());
-        return "login";
-    }
+  @GetMapping("/login")
+  public String login(Model model, HttpServletRequest request) {
+      if(request.getSession(false)!= null) {
+          return "redirect:/";
+      }
+      model.addAttribute("user", new User());
+      return "login";
+  }
 
     @GetMapping("/users/logout")
     public String logout(HttpServletRequest request) {
