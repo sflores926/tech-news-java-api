@@ -34,6 +34,7 @@
     <h2>Your Posts</h2>
     <ol>
       <li th:each="post : ${postList}">
+<!--        The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.-->
         <div th:insert="fragments/post-fragment :: post-fragment"></div>
         <a th:href="@{/dashboard/edit/{id}(id=${post.id})}" class="edit-link">Edit post</a>
       </li>

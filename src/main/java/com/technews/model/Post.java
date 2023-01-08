@@ -2,8 +2,8 @@ package com.technews.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import groovyjarjarantlr4.v4.runtime.misc.NotNull;
-import jakarta.persistence.*;
 
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -41,16 +41,12 @@ public class Post implements Serializable {
     public Post() {
     }
 
-    public Post(Integer id, String title, String postUrl, String userName, int voteCount, Integer userId, Date postedAt, Date updatedAt, List<Comment> comments) {
+    public Post(Integer id, String title, String postUrl, int voteCount, Integer userId) {
         this.id = id;
         this.title = title;
         this.postUrl = postUrl;
-        this.userName = userName;
         this.voteCount = voteCount;
         this.userId = userId;
-        this.postedAt = postedAt;
-        this.updatedAt = updatedAt;
-        this.comments = comments;
     }
 
     public Integer getId() {

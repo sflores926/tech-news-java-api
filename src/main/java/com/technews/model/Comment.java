@@ -1,6 +1,7 @@
 package com.technews.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
@@ -17,8 +18,7 @@ public class Comment implements Serializable {
     private Integer userId;
     private Integer postId;
 
-    public Comment(){
-
+    public Comment() {
     }
 
     public Comment(Integer id, String commentText, Integer userId, Integer postId) {
