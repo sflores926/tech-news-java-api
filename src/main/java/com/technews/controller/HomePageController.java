@@ -177,7 +177,7 @@ public class HomePageController {
 
         model.addAttribute("commentList", commentList);
         model.addAttribute("comment", new Comment());
-
+//        System.out.println(model);
         return model;
     }
 

@@ -14,15 +14,18 @@ public class Comment implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+
+    private String username;
     private String commentText;
     private Integer userId;
     private Integer postId;
 
-    public Comment() {
+    public Comment(){
     }
 
-    public Comment(Integer id, String commentText, Integer userId, Integer postId) {
+    public Comment(Integer id, String username, String commentText, Integer userId, Integer postId) {
         this.id = id;
+        this.username = username;
         this.commentText = commentText;
         this.userId = userId;
         this.postId = postId;
@@ -34,6 +37,14 @@ public class Comment implements Serializable {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getCommentText() {
@@ -65,18 +76,19 @@ public class Comment implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Comment comment = (Comment) o;
-        return Objects.equals(id, comment.id) && Objects.equals(commentText, comment.commentText) && Objects.equals(userId, comment.userId) && Objects.equals(postId, comment.postId);
+        return Objects.equals(id, comment.id) && Objects.equals(username, comment.username) && Objects.equals(commentText, comment.commentText) && Objects.equals(userId, comment.userId) && Objects.equals(postId, comment.postId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, commentText, userId, postId);
+        return Objects.hash(id, username, commentText, userId, postId);
     }
 
     @Override
     public String toString() {
         return "Comment{" +
                 "id=" + id +
+                ", username='" + username + '\'' +
                 ", commentText='" + commentText + '\'' +
                 ", userId=" + userId +
                 ", postId=" + postId +
