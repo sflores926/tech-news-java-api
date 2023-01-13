@@ -11,7 +11,8 @@ Our task is to set up a Java development environment for our social news site. C
 AS AN avid tech news reader
 I WANT to see posts from others on the current tech news 
 SO THAT I can comment and vote on their posts 
-AND I am able to create my own post and see others opinions on mine as well.
+I CAN create my own post
+AS WELL AS see others comments on my post.
 ```
 
 ## Table of Contents
