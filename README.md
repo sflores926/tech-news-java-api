@@ -13,7 +13,7 @@ I WANT to see posts from others on the current tech news
 SO THAT I can comment 
 I WILL be able to upvote their post 
 I CAN create my own post
-AS WELL AS see others comments on my post.
+AS WELL AS see others comments on my post
 ```
 
 ## Table of Contents
