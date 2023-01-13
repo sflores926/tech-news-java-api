@@ -10,7 +10,8 @@ Our task is to set up a Java development environment for our social news site. C
 ```md
 AS AN avid tech news reader
 I WANT to see posts from others on the current tech news 
-SO THAT I can comment and vote on their posts 
+SO THAT I can comment 
+I WILL be able to upvote their post 
 I CAN create my own post
 AS WELL AS see others comments on my post.
 ```
