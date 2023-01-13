@@ -39,7 +39,7 @@ AND I am able to create my own post and see others opinions on mine as well.
 The following screenshots demonstrates the application functionality:
 
 ![Homepage - Just Tech News.gif](Homepage%20-%20Just%20Tech%20News.gif)
-Demonstration of login,once successfully logged in redirected to dashboard. In your dashboard you are able to create posts with a link, you also have the capabilities to delete you post and edit them as well as adding your own comments. In the homepage you can see other users posts and click on the title of post and be redirected to that link. You can also comment and upvote that post. 
+* Demonstration of login,once successfully logged in redirected to dashboard. In your dashboard you are able to create posts with a link, you also have the capabilities to delete you post and edit them as well as adding your own comments. In the homepage you can see other users posts and click on the title of post and be redirected to that link. You can also comment and upvote that post. 
 
 
 
